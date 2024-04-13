@@ -14,10 +14,10 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-boundaryName        "inlet";
-indexDensity        50;
-flowDirection       y;
-maxCoordinate	    0.020761;
+boundaryName        "inlet"; //一般是在入口处释放Lagrangian颗粒
+indexDensity        50; // 每隔多少个网格选择一个Lagrangian颗粒
+flowDirection       y; // 主要的流动方向
+maxCoordinate	    0.020761; // 主要流动方向的最大坐标
 
 
 // ************************************************************************* //
