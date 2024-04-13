@@ -1,0 +1,10 @@
+points2trajectory是用来获取粒子的运动轨迹的后处理代码，可以按照以下步骤编译该代码：
+
+1. 本后处理代码使用了VTK库，所以要保证该VTK的正确安装；
+2. 将Make/options中修改VTK库的正确路径；
+3. 将trajectoryDict文件放置与system文件夹下，并按照要求以及个人需求修改参数；
+4. 在Case的文件夹下运行points2trajectory便可得三个文件，均位于Trajectory文件夹下：
+
+  a. distance, 该文件包含了每个颗粒的移动距离；
+  b. positions, 该文件包含了每个颗粒在每一时刻的位置坐标；
+  c. trajectory.vtp, 该文件可以在Paraview中打开，对每个颗粒的路径可视化。
